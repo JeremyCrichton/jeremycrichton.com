@@ -79,7 +79,7 @@ const IndexPage = () => (
 
           <Icon icon={faLinkedinIn} />
         </Icons>
-        <Title>I'm a software engineer based in Vancouver, BC, Canada</Title>
+        <Title>I'm a software engineer based in Vancouver, Canada</Title>
         <Paragraph>
           I have multiple years experience building web applications and most
           recently launched{" "}

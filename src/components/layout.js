@@ -43,10 +43,7 @@ const Layout = ({ children }) => {
       <GlobalStyles />
       <div>
         <main>{children}</main>
-        <Footer>
-          © {new Date().getFullYear()}, Jeremy Crichton | Resume | Jade |
-          Contact
-        </Footer>
+        <Footer>© {new Date().getFullYear()}, Jeremy Crichton</Footer>
       </div>
     </>
   )
