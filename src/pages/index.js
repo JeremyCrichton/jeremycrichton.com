@@ -76,9 +76,7 @@ const IndexPage = () => (
           >
             <Icon icon={faGithub} />
           </a>
-          <a href="mailto:jeremy@jeremycrichton.com">
-            <Icon icon={faEnvelope} />
-          </a>
+
           <Icon icon={faLinkedinIn} />
         </Icons>
         <Title>I'm a software engineer based in Vancouver, BC, Canada</Title>
