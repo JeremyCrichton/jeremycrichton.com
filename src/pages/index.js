@@ -1,12 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Jade from "../components/jade"
+import ContactIcons from "../components/contact-icons"
 
 const About = styled.div`
   height: 100vh;
@@ -31,25 +29,17 @@ const Name = styled.h1`
   margin-bottom: 2rem;
 `
 
-const Icons = styled.div`
-  font-size: 2.4rem;
-  margin-bottom: 2rem;
-`
-
-const Icon = styled(FontAwesomeIcon)`
-  margin-right: 1.4rem;
-`
-
 const Title = styled.h2`
   color: var(--color-secondary);
   font-size: 2.4rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 `
 
 const Paragraph = styled.p`
   font-size: 2rem;
   line-height: 1.6;
+  margin-bottom: 2rem;
 `
 
 const Colored = styled.span`
@@ -64,30 +54,16 @@ const IndexPage = () => (
         <Name>
           <Colored>Jeremy Crichton</Colored>
         </Name>
-        <Icons>
-          <a href={"/resume.pdf"} target="_blank" rel="noreferrer">
-            <Icon icon={faFile} />
-          </a>
-
-          <a
-            href="https://github.com/JeremyCrichton"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Icon icon={faGithub} />
-          </a>
-
-          <Icon icon={faLinkedinIn} />
-        </Icons>
+        <ContactIcons />
         <Title>I'm a software engineer based in Vancouver, Canada</Title>
+        <Paragraph>I build fast, scalable cloud applications.</Paragraph>
         <Paragraph>
-          I have multiple years experience building web applications and most
-          recently launched{" "}
+          I recently co-created{" "}
           <a href="https://jadeframework.dev" target="_blank" rel="noreferrer">
             <Colored>Jade</Colored>
           </a>
-          , a framework that simplifies deploying and managing JAMstack
-          applications on AWS cloud infrastructure.
+          , an open-source framework that simplifies deploying and managing
+          JAMstack applications on AWS cloud infrastructure.
         </Paragraph>
       </Container>
     </About>

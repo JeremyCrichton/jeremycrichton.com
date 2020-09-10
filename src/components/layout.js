@@ -1,15 +1,8 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import styled, { createGlobalStyle } from "styled-components"
 
+import ContactIcons from "./contact-icons"
 import "./layout.css"
 
 const GlobalStyles = createGlobalStyle`
@@ -24,26 +17,19 @@ const Footer = styled.footer`
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
+  align-items: center;
+  padding: 2rem 0;
 `
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <GlobalStyles />
       <div>
         <main>{children}</main>
-        <Footer>© {new Date().getFullYear()}, Jeremy Crichton</Footer>
+        <Footer>
+          <ContactIcons margin="2rem" size="3rem" />
+        </Footer>
       </div>
     </>
   )

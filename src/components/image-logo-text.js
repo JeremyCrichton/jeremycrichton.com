@@ -13,10 +13,10 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
+const ImageLogoText = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "jade_logo-mark.png" }) {
+      placeholderImage: file(relativePath: { eq: "jade_logo-type.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -29,9 +29,9 @@ const Image = () => {
   return (
     <Img
       fluid={data.placeholderImage.childImageSharp.fluid}
-      style={{ display: "inline-block", width: "4rem" }}
+      style={{ display: "inline-block", width: "100%" }}
     />
   )
 }
 
-export default Image
+export default ImageLogoText

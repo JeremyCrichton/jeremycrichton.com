@@ -2,25 +2,28 @@ import React from "react"
 import styled from "styled-components"
 
 import Button from "./button"
-import Image from "./image"
+import ImageLogo from "./image-logo"
+import ImageLogoText from "./image-logo-text"
 import initGif from "../images/jade-init.gif"
 
 const JadeSection = styled.section`
   background-color: var(--color-teriary);
   color: var(--color-tertiary);
   padding: 6rem;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 4rem;
-`
-
-const LogoText = styled.span`
-  font-size: 4rem;
-  text-transform: uppercase;
-  margin-left: 2rem;
+  width: 20rem;
 `
 
 const InitImageContainer = styled.div`
@@ -44,16 +47,24 @@ const CtaContainer = styled.div`
 const Jade = () => (
   <JadeSection>
     <LogoContainer>
-      <Image />
-      <LogoText>Jade</LogoText>
+      <ImageLogo />
+      <ImageLogoText />
     </LogoContainer>
     <InitImageContainer>
-      <InitImage src={initGif} alt="Jade Init" />
+      <a href="https://jadeframework.dev" target="_blank" rel="noreferrer">
+        <InitImage src={initGif} alt="Jade Init" />
+      </a>
     </InitImageContainer>
     <Paragraph>
-      I recently co-created Jade with a small remote team. Jade is an open
-      source framework for deploying JAMstack applications utilizing AWS cloud
-      infrastructure.
+      Jade is an open-source framework that makes it simple to deploy and
+      maintain JAMstack applications on AWS cloud infrastructure. The JAMstack
+      is a web development architecture that utilizes modern tools and practices
+      to make web apps fast, secure and highly scalable.
+    </Paragraph>
+    <Paragraph>
+      Jade abstracts away the time and complexity of provisioning services and
+      writing backend code related to the underlying infrastructure so that
+      developers can focus on building their applications.
     </Paragraph>
     <CtaContainer>
       <Button href="https://jadeframework.dev" target="_blank" rel="noreferrer">
