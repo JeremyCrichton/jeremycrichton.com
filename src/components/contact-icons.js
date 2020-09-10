@@ -18,7 +18,11 @@ const Icon = styled(FontAwesomeIcon)`
 `
 const ContactIcons = ({ margin, size }) => (
   <Icons size={size}>
-    <a href={"/resume.pdf"} target="_blank" rel="noreferrer">
+    <a
+      href={"/resume-10-09-2020-13-17-59.pdf"}
+      target="_blank"
+      rel="noreferrer"
+    >
       <Icon margin={margin} icon={faFile} />
     </a>
 
