@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Button from "./button"
 import ImageLogo from "./image-logo"
 import ImageLogoText from "./image-logo-text"
-import initGif from "../images/jade-init.gif"
+import initGif from "../images/jade-init-2.gif"
 
 const JadeSection = styled.section`
   background-color: var(--color-teriary);
@@ -46,10 +46,12 @@ const CtaContainer = styled.div`
 
 const Jade = () => (
   <JadeSection>
-    <LogoContainer>
-      <ImageLogo />
-      <ImageLogoText />
-    </LogoContainer>
+    <a href="https://jadeframework.dev" target="_blank" rel="noreferrer">
+      <LogoContainer>
+        <ImageLogo />
+        <ImageLogoText />
+      </LogoContainer>
+    </a>
     <InitImageContainer>
       <a href="https://jadeframework.dev" target="_blank" rel="noreferrer">
         <InitImage src={initGif} alt="Jade Init" />
@@ -57,9 +59,7 @@ const Jade = () => (
     </InitImageContainer>
     <Paragraph>
       Jade is an open-source framework that makes it simple to deploy and
-      maintain JAMstack applications on AWS cloud infrastructure. The JAMstack
-      is a web development architecture that utilizes modern tools and practices
-      to make web apps fast, secure and highly scalable.
+      maintain JAMstack applications on AWS cloud infrastructure.
     </Paragraph>
     <Paragraph>
       Jade abstracts away the time and complexity of provisioning services and

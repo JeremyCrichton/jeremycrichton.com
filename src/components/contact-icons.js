@@ -6,7 +6,7 @@ import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons"
 
 const Icons = styled.div`
-  font-size: ${props => (props.size ? props.size : "2.4rem")};
+  font-size: ${props => (props.size ? props.size : "3rem")};
 `
 
 const Icon = styled(FontAwesomeIcon)`
