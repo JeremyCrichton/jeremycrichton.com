@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Jeremy Crichton`,
-    description: `Jeremy Crichton, Software Engineer.`,
+    description: `I'm a software engineer based in Vancouver, Canada. I recently co-created Jade, an open-source framework that simplifies deploying and managing
+    JAMstack applications on AWS cloud infrastructure.`,
     author: `Jeremy Crichton`,
     image: "/jeremy-crichton-circle.png",
     siteUrl: `https://jeremycrichton.com`,

@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import Layout from "./layout"
-import SEO from "./seo"
 import Jade from "./jade"
 import ContactIcons from "./contact-icons"
 
@@ -48,7 +46,6 @@ const Colored = styled.span`
 
 const Home = () => (
   <>
-    <SEO title="Home" />
     <About>
       <Container>
         <Name>
