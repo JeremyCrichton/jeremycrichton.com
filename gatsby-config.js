@@ -4,7 +4,7 @@ module.exports = {
     description: `I'm a software engineer based in Vancouver, Canada. I recently co-created Jade, an open-source framework that simplifies deploying and managing
     JAMstack applications on AWS cloud infrastructure.`,
     author: `Jeremy Crichton`,
-    image: "/jeremy-crichton-circle.png",
+    image: "/jeremy-crichton-meta.png",
     siteUrl: `https://jeremycrichton.com`,
   },
   plugins: [
