@@ -3,6 +3,8 @@ module.exports = {
     title: `Jeremy Crichton`,
     description: `Jeremy Crichton, Software Engineer.`,
     author: `Jeremy Crichton`,
+    image: "/jeremy-crichton-circle.png",
+    siteUrl: `https://jeremycrichton.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
